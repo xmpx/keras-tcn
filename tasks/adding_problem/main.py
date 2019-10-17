@@ -1,6 +1,6 @@
 import keras
-
-from tcn import compiled_tcn
+import tcn
+# from tcn import compiled_tcn
 from utils import data_generator
 
 x_train, y_train = data_generator(n=200000, seq_length=600)
@@ -16,7 +16,7 @@ class PrintSomeValues(keras.callbacks.Callback):
 
 
 def run_task():
-    model = compiled_tcn(return_sequences=False,
+    model = tcn.compiled_tcn(return_sequences=False,
                          num_feat=x_train.shape[2],
                          num_classes=0,
                          nb_filters=24,
