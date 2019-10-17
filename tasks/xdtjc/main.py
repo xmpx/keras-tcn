@@ -4,3 +4,4 @@ x_train = np.load('/media/clwang/C60EA0300EA01C05/Users/clwang/Downloads/validat
 
 print(x_train.shape)
 print(x_train.shape)
+print(x_train.shape)
